@@ -1,0 +1,49 @@
+[{
+       "logo": "../assets/UMSS.png",
+        "college": "Universidad Mayor de San Simón",
+        "grade": "Ingeniero Agrónomo",
+        "status": "Finalizado",
+        "dateOfGrade": "8/06/2011",
+        "url": "https://www.umss.edu.bo/"
+    },
+    {
+        "logo": "../assets/CAgua.jfif",
+         "college": "Centro Andino Para la Gestión y Uso del Agua Universidad Mayor de San Simón",
+         "grade": "Magister en Gestión Integral de Recursos Hídricos",
+         "status": "Finalizado",
+         "dateOfGrade": "27/02/2020",
+         "url": "http://www.centro-agua.umss.edu.bo/"
+     },
+     {
+        "logo": "../assets/UAJMS.png",
+         "college": "Universidad Juan Misael Saracho",
+         "grade": "Diplomado en Gestión Ambiental",
+         "status": "Finalizado",
+         "dateOfGrade": "04/03/2013",
+         "url": "https://www.uajms.edu.bo/"
+     },
+     {
+        "logo": "../assets/Clas.jfif",
+         "college": "Centro de Levantamiento Aeroespacial y Aplicaciones SIG para el Desarrollo Sostenible de los Recursos Naturales Universidad Mayor de San Simón",
+         "grade": "Diplomado en Sistemas de Información Geográfica",
+         "status": "Finalizado",
+         "dateOfGrade": "21/08/2013",
+         "url": "http://www.clas.umss.edu.bo/"
+     },
+     {
+        "logo": "../assets/USS.jfif",
+         "college": "Universidad San Sebastián",
+         "grade": "Diplomado en Diseño de Ingeniería Hidráulica",
+         "status": "Finalizado",
+         "dateOfGrade": "20/12/2014",
+         "url": "https://www.uss.cl/"
+     },
+     {
+        "logo": "../assets/Aprograma.png",
+         "college": "Argentina Programa",
+         "grade": "Full Stack Developer",
+         "status": "En curso",
+         "dateOfGrade": "",
+         "url": "https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"
+     }]
+    

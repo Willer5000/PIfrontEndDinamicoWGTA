@@ -1,1 +1,188 @@
-/* You can add global styles to this file, and also import other style files */
+#login1{
+    left: 50px;
+}
+#BarraNav{
+    background: #44A08D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+#SecPerfil{
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#presentacion{
+      color: antiquewhite;
+        font-size: small;
+        }
+#editBanner{
+            position:absolute;
+            left: 1300px;
+            top: 100px;
+            z-index: 1;
+            color: black;
+}
+#editFotoPerfil{
+            position:static;
+            left: 130px;
+            bottom: 100px;
+            z-index: 1;
+            color: azure;
+          }
+#editDatosPerfil{
+            text-indent: 0.5em;
+            color: azure;
+          } 
+#editDatosExp{
+            text-indent: 0.5em;
+            color: black;
+          }      
+#editDatosEdu{
+            text-indent: 0.5em;
+            color: black;
+          }              
+#Fotoperfil{
+    position: relative;
+    bottom: 80px;
+  }
+
+#parrafo1{
+    color: gainsboro;
+    right: 800px;
+    justify-content: right;
+    text-align: justify;
+    font-size: small;
+}
+#Page2Bar{
+    background: #403B4A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E7E9BB, #403B4A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: navy;
+    font-size: 50px;
+    font-style: oblique;
+}
+#tabExp{
+    text-align: center;
+    justify-content: center;
+    font-size: small;
+    margin-block: 20px;
+}
+#DescExp{
+    text-align: justify;
+}
+#tabExp{
+    border-collapse: collapse; 
+    font-size: smaller;
+    vertical-align: middle;
+}
+#colemp{
+    width: 10px;
+}
+#colug{
+    width: 10px;
+}
+#colcar{
+    width: 10px;
+}
+#banner {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+#titulos{
+    text-align: center;
+    font-size: small;
+    font-style: normal;
+    line-height: 100%;
+    overflow: scroll hidden;
+}
+
+#tacursos{
+    border-collapse: collapse; 
+    font-size: small;
+    line-height: normal;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+    margin-block: 20px;
+}
+
+#cursosYTalleres{
+    font-size: x-large;
+    font-style: normal;
+    color: teal;
+}
+footer{
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: gainsboro;
+    right: 800px;
+    justify-content: right;
+    text-align: justify;
+    font-size: small;
+}
+
+
+/* Barra de progreso */
+
+#progressbar4{
+    background:#057c0f;
+}
+#progressbar3{
+background:#eb3d11;
+}
+#progressbar2{
+background:#deeb11;
+    }
+#progressbar1{
+background:#3d99f9;
+        }
+
+.progress-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 20px;
+}
+.progress{
+    height: 20px;
+    background: #d4d7e6;
+    border-radius: 30px;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible;
+}
+.progress .progress-bar{
+    border-radius: 30px;
+    box-shadow: none;
+    position: relative;
+    animation: animate-positive 2s;
+}
+.progress .progress-bar:before{
+    content: "";
+    width: 100%;
+    height: 50%;
+    background: rgba(0,0,0,0.3);
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.progress .progress-bar:after{
+    content: "";
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #cbcbcb;
+    border: 8px solid #000;
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    z-index: 1;
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}

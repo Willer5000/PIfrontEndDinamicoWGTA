@@ -1,0 +1,37 @@
+<article class="accordion-item">
+    <h1 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"  id="Page2Bar">
+        <b>Experiencia</b>
+      </button>
+    </h1>
+    <div id="collapseOne" class="container-fluid accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body table-responsive-lg table-responsive-md table-responsive-sm table-responsive-xl table-responsive-xxl">
+          <table class="table table-light" id="tabExp" data-bs-toggle="collapse">
+                  <tr>
+                      <th><strong>LOGOTIPO</strong></th>
+                      <th id="colemp"><strong>EMPRESA / INSTITUCIÓN</strong></th>
+                      <th id="coldes"><strong>DESCRIPCIÓN</strong></th>
+                      <th id="colug"><strong>LUGAR</strong></th>
+                      <th id="colcar"><strong>CARGO</strong></th>
+                      <th colspan="2"><strong>PERIODO DE TRABAJO</strong><div>(Desde, Hasta)</div>
+                  </tr>
+              <tr *ngFor="let experiencias of experienceList">                       
+                  <td><img [src]="experiencias.logo" width="100px" height="100px" id="CochaGober"></td>
+         <td><a [href]="experiencias.url">{{experiencias.company}}</a></td>
+         <td>
+          <ul type="circle" id="DescExp">
+              <li>{{experiencias.jobDescription.activity1}}<i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i></li>
+              <li>{{experiencias.jobDescription.activity2}}<i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i><i class="fa-solid fa-xmark" id="editDatosPerfil"></i></li>
+              <li>{{experiencias.jobDescription.activity3}}<i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i><i class="fa-solid fa-xmark" id="editDatosPerfil"></i></li>
+          </ul>
+         </td>
+         <td>{{experiencias.location}}<i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i></td>
+         <td>{{experiencias.jobPost}}<i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i></td>
+         <td>{{experiencias.workingPeriod.since}}<i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i></td>
+         <td>{{experiencias.workingPeriod.then}}<i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i></td>
+      </tr> 
+          </table>
+      </div>
+    </div>
+</article>
+

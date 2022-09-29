@@ -1,0 +1,60 @@
+<article class="accordion-item">
+    <h1 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" id="Page2Bar">
+        <b>Proyectos</b>
+      </button>
+    </h1>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body table-responsive-lg table-responsive-md table-responsive-sm table-responsive-xl table-responsive-xxl">
+        
+
+
+
+<table class="table table-ligth" id="tacursos">
+    <div class="container"> 
+     <tr>
+       <th>Proyecto</th>
+       <th>Titulo</th>
+       <th>Objetivo</th>
+       <th>Fecha</th>
+       <th>Enlace</th>
+       <th colpsan="3"><strong>Gráficos</strong></th>
+     </tr>
+
+    <tr *ngFor="let proyecto of projectsList">
+      <td>
+        <h6>{{proyecto.project}}</h6>
+      </td>
+      <td>
+        <p>{{proyecto.title}}<i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i></p>
+      </td>
+      <td>
+       <p>{{proyecto.objetive}}<i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i></p>
+     </td>
+      <td>
+        <p>{{proyecto.date}}<i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i></p>
+      </td>
+     <td>
+     <a [href]="proyecto.link">{{proyecto.enlace}}<i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i></a>  
+     </td>
+     <td>
+      <p>{{proyecto.description1}}</p>
+      <img [src]="proyecto.img1" width="200px" height="200px"> <i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i> 
+      </td> 
+      <td>
+        <p>{{proyecto.description2}}</p>
+       <img [src]="proyecto.img2" width="200px" height="200px"> <i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i> 
+       </td>
+       <td>
+        <p>{{proyecto.description3}}</p>
+         <img [src]="proyecto.img3" width="200px" height="200px"> <i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i> 
+         </td>
+    </tr>
+
+
+   </div>
+   </table>
+        </div>
+      </div>
+  </article>
+

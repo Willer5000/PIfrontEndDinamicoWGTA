@@ -1,0 +1,171 @@
+[
+    {
+    "logo": "../assets/CAE.jfif",
+    "institute": "Fundación Camino a la Excelencia",
+    "topic": "Sistemas de Información Geográfica utilizando ArcGis",
+    "duration": "30",
+    "dateOfCertificate": "22/11/2011",
+    "url": "https://www.facebook.com/fundacioncae.cochabamba/"
+
+},
+{
+    "logo": "../assets/CAE.jfif",
+    "institute": "Fundación Camino a la Excelencia",
+    "topic": "Procesamiento de Imagenes Satelitales",
+    "duration": "27",
+    "dateOfCertificate": "23/11/2011",
+    "url": "https://www.facebook.com/fundacioncae.cochabamba/"
+},
+{
+    "logo": "../assets/MDRyT.jfif",
+    "institute": "Ministerio de Desarrollo Rural y Tierras",
+    "topic": "Manejo de Información Georeferenciada Sectorial",
+    "duration": "16",
+    "dateOfCertificate": "20/04/2012",
+    "url": "https://www.ruralytierras.gob.bo/"
+},
+{
+    "logo": "../assets/CEMLA.jpeg",
+    "institute": "Centro Empresarial Latinoamericano",
+    "topic": "Legislación Ambiental y Gestión Integral de Residuos Sólidos",
+    "duration": "48",
+    "dateOfCertificate": "20/06/2012",
+    "url": "http://www.cemla-formacion.com/infoInstitucional.php"
+},
+{
+    "logo": "../assets/CEMLA.jpeg",
+    "institute": "Centro Empresarial Latinoamericano",
+    "topic": "Implementación de Sistemas de Gestión y Auditoría Ambiental",
+    "duration": "24",
+    "dateOfCertificate": "26/06/2012",
+    "url": "http://www.cemla-formacion.com/infoInstitucional.php"
+},
+{
+    "logo": "../assets/CEMLA.jpeg",
+    "institute": "Centro Empresarial Latinoamericano",
+    "topic": "Gestión de Riesgos Ambientales",
+    "duration": "47",
+    "dateOfCertificate": "03/08/2012",
+    "url": "http://www.cemla-formacion.com/infoInstitucional.php"
+},
+{
+    "logo": "../assets/CEMLA.jpeg",
+    "institute": "Centro Empresarial Latinoamericano",
+    "topic": "Evaluación de Impactos Ambientales en proyectos",
+    "duration": "27",
+    "dateOfCertificate": "25/08/2012",
+    "url": "http://www.cemla-formacion.com/infoInstitucional.php"
+},
+{
+    "logo": "../assets/CEMLA.jpeg",
+    "institute": "Centro Empresarial Latinoamericano",
+    "topic": "Desarrollo Sostenible y Biodiversidad",
+    "duration": "19",
+    "dateOfCertificate": "21/09/2012",
+    "url": "http://www.cemla-formacion.com/infoInstitucional.php"
+},
+{
+    "logo": "../assets/Ibnorca.png",
+    "institute": "Instituto Boliviano de Normalización y Calidad",
+    "topic": "Fundamentos de Sistema de Gestión de la Seguridad y Salud Ocupacional NB/OHSAS 18001:2008",
+    "duration": "20",
+    "dateOfCertificate": "25/01/2013",
+    "url": "https://www.ibnorca.org/"
+},
+{
+    "logo": "../assets/Ibnorca.png",
+    "institute": "Instituto Boliviano de Normalización y Calidad",
+    "topic": "Requisitos del Sistema de Gestión de la Seguridad y Salud Ocupacional",
+    "duration": "20",
+    "dateOfCertificate": "08/02/2013",
+    "url":"https://www.ibnorca.org/"
+},
+{
+    "logo": "../assets/Ibnorca.png",
+    "institute": "Instituto Boliviano de Normalización y Calidad",
+    "topic": "Auditorias Internas del Sistema de la Seguridad y Salud Ocupacional",
+    "duration": "20",
+    "dateOfCertificate": "12/04/2013",
+    "url": "https://www.ibnorca.org/"
+},
+{
+    "logo": "../assets/MMAYA.jpg",
+    "institute": "Escuela Nacional de Riego",
+    "topic": "Diseño de Sistemas y Formulación de Proyectos de Riego",
+    "duration": "16",
+    "dateOfCertificate": "25/10/2013",
+    "url": "https://siarh.gob.bo/escuela-nacional-de-riego/"
+},
+{
+    "logo": "../assets/MMAYA.jpg",
+    "institute": "Escuela Nacional de Riego",
+    "topic": "Proyectos de Riego y Asistencia Técnica Integral",
+    "duration": "16",
+    "dateOfCertificate": "15/11/2013",
+    "url":"https://siarh.gob.bo/escuela-nacional-de-riego/"
+},
+{
+    "logo": "../assets/CEMLA.jpeg",
+    "institute": "Centro Empresarial Latinoamericano",
+    "topic": "Hidrología Aplicada",
+    "duration": "22",
+    "dateOfCertificate": "14/05/2014",
+    "url": "http://www.cemla-formacion.com/infoInstitucional.php"
+},
+{
+    "logo": "../assets/CEMLA.jpeg",
+    "institute": "Centro Empresarial Latinoamericano",
+    "topic": "Presas y Embalses",
+    "duration": "22",
+    "dateOfCertificate": "04/10/2014",
+    "url": "http://www.cemla-formacion.com/infoInstitucional.php"
+},
+{
+    "logo": "../assets/CEMLA.jpeg",
+    "institute": "Centro Empresarial Latinoamericano",
+    "topic": "Proyectos de riego",
+    "duration": "22",
+    "dateOfCertificate": "06/10/2014",
+    "url": "http://www.cemla-formacion.com/infoInstitucional.php"
+},
+{
+    "logo": "../assets/MMAYA.jpg",
+    "institute": "Escuela Nacional de Riego",
+    "topic": "Sistemas de Información Geográfica en Proyectos de Riego I",
+    "duration": "16",
+    "dateOfCertificate": "24/03/2015",
+    "url": "https://siarh.gob.bo/escuela-nacional-de-riego/"
+},
+{
+    "logo": "../assets/MMAYA.jpg",
+    "institute": "Escuela Nacional de Riego",
+    "topic": "Sistemas de Información Geográfica en Proyectos de Riego II",
+    "duration": "16",
+    "dateOfCertificate": "21/07/2015",
+    "url": "https://siarh.gob.bo/escuela-nacional-de-riego/"
+},
+{
+    "logo": "../assets/MMAYA.jpg",
+    "institute": "Escuela Nacional de Riego",
+    "topic": "Curso de riego y fertilización de cultivos hortícolas",
+    "duration": "40",
+    "dateOfCertificate": "13/11/2015",
+    "url":"https://siarh.gob.bo/escuela-nacional-de-riego/"
+},
+{
+    "logo": "../assets/CADIC.jpg",
+    "institute": "Centro Académico Didáctico del Ingeniero Civil",
+    "topic": "QGIS y R para el manejo de información Geográfica",
+    "duration": "18",
+    "dateOfCertificate": "20/06/2021",
+    "url": "https://www.facebook.com/CursosVirtualesIng.Civil"
+},
+{
+    "logo": "../assets/IGN.png",
+    "institute": "Instituo Geográfico Nacional",
+    "topic": "Sistemas de Información Geográfica Software QGIS GRASS Nivel III- Modalidad Virtual",
+    "duration": "23",
+    "dateOfCertificate": "07/12/2021",
+    "url": "https://www.ign.gob.ar/"
+}
+]
