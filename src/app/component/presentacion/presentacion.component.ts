@@ -9,6 +9,8 @@ import { PortfolioService } from './../../servicios/portfolio.service';
 export class PresentacionComponent implements OnInit {
 
   miPresentation:any;
+  miOcupation: any;
+
 
   constructor(private datosPortfolio:PortfolioService) {}
 
@@ -17,6 +19,9 @@ export class PresentacionComponent implements OnInit {
              console.log(data);
     
         this.miPresentation=data;     
+        });
+        this.datosPortfolio.obtenerDatos().subscribe(data2=>{
+          this.miOcupation=data2.ocupation;
         });
       }
     

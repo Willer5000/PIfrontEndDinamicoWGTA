@@ -18,14 +18,13 @@
                  <td><span>{{miPresentation.name}}</span><span>{{miPresentation.lastName}}</span><i class="fa-sharp fa-solid fa-pen" id="editDatosPerfil"></i></td>
                  <tr>       
                    <td><b>Profesión:</b></td>
-              <td><span>{{miPresentation.ocupation.profesion1}}<i class="fa-sharp fa-solid fa-pen" id="editDatosPerfil"></i></span></td>
-              <tr>          
-                  <td></td>
-                  <td><span>{{miPresentation.ocupation.profesion2}}<i class="fa-sharp fa-solid fa-pen" id="editDatosPerfil"></i><i class="fa-solid fa-xmark" id="editDatosPerfil"></i></span></td>  
-                  <tr>
-                      <td></td>
-                      <td> <span>{{miPresentation.ocupation.profesion3}}<i class="fa-sharp fa-solid fa-pen" id="editDatosPerfil"></i><i class="fa-solid fa-xmark" id="editDatosPerfil"></i></span></td>
-                  </tr>
+                   <td>
+                   <ol>
+                    <li *ngFor="let ocupation of miOcupation">
+                      <span>{{ocupation.profesion}}<i class="fa-sharp fa-solid fa-pen" id="editDatosPerfil"></i></span>
+                    </li>
+                  </ol>
+                  </td>
           </table>
                   </a>
                 <li class="nav-item">
