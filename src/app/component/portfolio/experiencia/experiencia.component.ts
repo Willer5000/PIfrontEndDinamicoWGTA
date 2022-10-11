@@ -10,7 +10,6 @@ export class ExperienciaComponent implements OnInit {
   
   experienceList: any[]=[];
 
-
   constructor(private datosPortfolio:PortfolioService) { }
  
 
@@ -18,5 +17,5 @@ export class ExperienciaComponent implements OnInit {
     this.datosPortfolio.datosDeExperiencia().subscribe(experiencia =>{
     this.experienceList=experiencia;     
     });
-  };
 }
+};

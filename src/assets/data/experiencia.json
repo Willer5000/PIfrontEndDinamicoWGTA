@@ -2,11 +2,10 @@
     {
         "logo": "../assets/GoberCochabamba.jfif",
         "company": "Gobierno Autonomo Departamental de Cochabamba",
-        "jobDescription": {
-            "activity1": "Elaboración de mapas de riesgo.",
-            "activity2": "Identificación con herramientas SIG zonas de afectadas, vulnerables y amenazadas por el cambio climático.",
-            "activity3": "Coadyuvar en elaboración y ejecución de proyectos de prevención y control de riesgos climáticos."
-        },
+        "activities": [{
+            "activity": "Elaboración de mapas de riesgo."},
+            {"activity": "Identificación con herramientas SIG zonas de afectadas, vulnerables y amenazadas por el cambio climático."},
+            {"activity": "Coadyuvar en elaboración y ejecución de proyectos de prevención y control de riesgos climáticos."}],
         "location": "Cochabamba-Bolivia",
         "jobPost": "Técnico Unidad de Gestión de Riesgos",
         "workingPeriod": {
@@ -18,11 +17,11 @@
 {
     "logo": "../assets/GoberCochabamba.jfif",
         "company": "Gobierno Autonomo Departamental de Cochabamba",
-        "jobDescription": {
-            "activity1": "Revisión de proyectos desde el ambito ambiental.",
-            "activity2": "Control y seguimiento de actividades, obras o proyectos implementados (identificación de impactos ambientales y evaluación de la eficacia de las medidas de mitigación).",
-            "activity3": "Uso de herramientas SIG (para la gestión ambiental)."
-        },
+        "activities": [{
+            "activity": "Revisión de proyectos desde el ambito ambiental."},
+            {"activity": "Control y seguimiento de actividades, obras o proyectos implementados (identificación de impactos ambientales y evaluación de la eficacia de las medidas de mitigación)."},
+            {"activity": "Uso de herramientas SIG (para la gestión ambiental)."
+        }],
         "location": "Cochabamba-Bolivia",
         "jobPost": "Técnico de Medio Ambiente",
         "workingPeriod": {
@@ -34,11 +33,9 @@
 {
     "logo": "../assets/GIZ.png",
         "company": "PROAGRO GIZ",
-        "jobDescription": {
-            "activity1": "Elaboración del documento sobre: MONITOREO DE EFICIENCIAS DE RIEGO PARA EL MODELO DE GESTION RIEGO TECNIFICADO EN EL CENTRO DE REFERENCIA DE HORTALIZAS (INIAF - GAR-VM).",
-            "activity2": "",
-            "activity3": ""
-        },
+        "activities": [{
+            "activity": "Elaboración del documento sobre: MONITOREO DE EFICIENCIAS DE RIEGO PARA EL MODELO DE GESTION RIEGO TECNIFICADO EN EL CENTRO DE REFERENCIA DE HORTALIZAS (INIAF - GAR-VM)."
+        }],
         "location": "Villamontes - Tarija - Bolivia",
         "jobPost": "Consultor",
         "workingPeriod": {
@@ -50,11 +47,9 @@
 {
     "logo": "../assets/GIZ.png",
         "company": "PROAGRO GIZ",
-        "jobDescription": {
-            "activity1": "Elaboración del documento sobre: EXPERIENCIAS DE RIEGO TECNIFICADO EN EL CHACO BOLIVIANO (ENTRE RIOS – VILLAMONTES)",
-            "activity2": "",
-            "activity3": ""
-        },
+        "activities": [{
+            "activity": "Elaboración del documento sobre: EXPERIENCIAS DE RIEGO TECNIFICADO EN EL CHACO BOLIVIANO (ENTRE RIOS – VILLAMONTES)"
+        }],
         "location": "Villamontes / Entre Rios - Tarija - Bolivia",
         "jobPost": "Consultor",
         "workingPeriod": {
@@ -66,11 +61,11 @@
 {
     "logo": "../assets/GoberChuqui.png",
         "company": "Gobierno Autonomo Departamental de Chuquisaca",
-        "jobDescription": {
-            "activity1": "Revisión de proyectos desde el ambito ambiental.",
-            "activity2": "Control y seguimiento de actividades, obras o proyectos implementados (identificación de impactos ambientales y evaluación de la eficacia de las medidas de mitigación).",
-            "activity3": "Elaboración de base de datos SIG de las áreas de forestación y reforestación del Proyecto Forestal GAD Chuquisaca."
-        },
+        "activities": [{
+            "activity": "Revisión de proyectos desde el ambito ambiental."},
+            {"activity": "Control y seguimiento de actividades, obras o proyectos implementados (identificación de impactos ambientales y evaluación de la eficacia de las medidas de mitigación)."},
+            {"activity": "Elaboración de base de datos SIG de las áreas de forestación y reforestación del Proyecto Forestal GAD Chuquisaca."
+        }],
         "location": "Chuquisaca - Bolivia",
         "jobPost": "Técnico SIG y Medio Ambiente",
         "workingPeriod": {
@@ -82,12 +77,10 @@
 {
     "logo": "",
         "company": "Servicios de Ingeniería Multidisciplinaria",
-        "jobDescription": {
-            "activity1": "Elaboración de diseños hidráulicos y agronómicos para proyectos de riego.",
-            "activity2": "Elaboración de Estudios de Evaluación de Impacto Ambiental.",
-            "activity3": ""
-        
-        },
+        "activities": [{
+            "activity": "Elaboración de diseños hidráulicos y agronómicos para proyectos de riego."},
+            {"activity": "Elaboración de Estudios de Evaluación de Impacto Ambiental."
+        }],
         "location": "Cochabamba - Bolivia",
         "jobPost": "Consultor en riego",
         "workingPeriod": {
@@ -99,11 +92,11 @@
 {
     "logo": "../assets/Iniaf.png",
         "company": "Instituto Nacional de Investigación Agropecuaria y Forestal",
-        "jobDescription": {
-            "activity1": "Sistematizar, analizar e interpretar la información generada por el PN-Hortalizas del INIAF en coordinación con el equipo técnico del PN Hortalizas.",
-            "activity2": "Elaboración de la Síntesis de Resultados, documentos técnicos, artículos científicos del PN-Hortalizas y promover su divulgación.",
-            "activity3": "Implementación de diseños de experimentos para los cultivos de ajo, tomate y cebolla"
-        },
+        "activities": [{
+            "activity": "Sistematizar, analizar e interpretar la información generada por el PN-Hortalizas del INIAF en coordinación con el equipo técnico del PN Hortalizas."},
+            {"activity": "Elaboración de la Síntesis de Resultados, documentos técnicos, artículos científicos del PN-Hortalizas y promover su divulgación."},
+            {"activity": "Implementación de diseños de experimentos para los cultivos de ajo, tomate y cebolla"
+        }],
         "location": "Sipe Sipe - Cochabamba - Bolivia",
         "jobPost": "Técnico en sistematización de Información y Manejo de Paquetes Estadisticos",
         "workingPeriod": {
@@ -115,11 +108,11 @@
 {
     "logo": "../assets/EndeCoorp.jfif",
         "company": "Empresa Nacional de Electricidad Coorporación",
-        "jobDescription": {
-            "activity1": "Identificación y análisis de la situación de desarrollo productivo del área del proyecto hidroeléctrico “Rositas”",
-            "activity2": "Levantamiento geográfico mediante SIG, de todas las zonas del proyecto.",
-            "activity3": "Proveer de información permanente en temas productivos y socio ambientales"
-        },
+        "activities": [{
+            "activity": "Identificación y análisis de la situación de desarrollo productivo del área del proyecto hidroeléctrico “Rositas”"},
+            {"activity": "Levantamiento geográfico mediante SIG, de todas las zonas del proyecto."},
+            {"activity": "Proveer de información permanente en temas productivos y socio ambientales"
+        }],
         "location": "Abapó - Santa Cruz - Bolivia",
         "jobPost": "Profesional en gestión Social SIG y Medio Ambiente",
         "workingPeriod": {
@@ -131,11 +124,11 @@
 {
     "logo": "../assets/EndeGuar.jfif",
         "company": "Empresa Nacional de Electricidad filiar Guaracachi",
-        "jobDescription": {
-            "activity1": "Identificación y análisis de la situación de desarrollo productivo del área del proyecto hidroeléctrico “Rositas”",
-            "activity2": "Levantamiento geográfico mediante SIG, de todas las zonas del proyecto.",
-            "activity3": "Proveer de información permanente en temas productivos y socio ambientales"
-        },
+        "activities": [{
+            "activity": "Identificación y análisis de la situación de desarrollo productivo del área del proyecto hidroeléctrico “Rositas”"},
+            {"activity": "Levantamiento geográfico mediante SIG, de todas las zonas del proyecto."},
+            {"activity": "Proveer de información permanente en temas productivos y socio ambientales"
+        }],
         "location": "Santa Cruz de la Sierra - Santa Cruz - Bolivia",
         "jobPost": "Asistente Técnico Socioambiental",
         "workingPeriod": {
@@ -147,11 +140,9 @@
 {
     "logo": "../assets/Chirrip.jpg",
         "company": "Chirripó Consultores",
-        "jobDescription": {
-            "activity1": "Apoyo en el estudio de “Análisis de Riesgo de Deforestación por Actividades Agropecuarias y Medidas de Mitigación en Bolivia”",
-       "activity2": "",
-       "activity3": ""
-        },
+        "activities": [{
+            "activity": "Apoyo en el estudio de “Análisis de Riesgo de Deforestación por Actividades Agropecuarias y Medidas de Mitigación en Bolivia”"
+        }],
         "location": "Santa Cruz / Cochabamba / La Paz - Bolivia",
         "jobPost": "Consultor",
         "workingPeriod": {
@@ -163,11 +154,9 @@
 {
     "logo": "../assets/ABC.png",
         "company": "Administradora Boliviana de Carreteras",
-        "jobDescription": {
-            "activity1": "Elaboración del levantamiento de video inventario básico de los principales corredores de la Red Vial Fundamental de Bolivia donde se ejecutó un inventario de 10.000,00 km de carretera",
-            "activity2": "",
-            "activity3": ""
-        },
+        "activities": [{
+            "activity": "Elaboración del levantamiento de video inventario básico de los principales corredores de la Red Vial Fundamental de Bolivia donde se ejecutó un inventario de 10.000,00 km de carretera"
+        }],
         "location": "Bolivia",
         "jobPost": "Consultor",
         "workingPeriod": {

@@ -61,6 +61,7 @@ background: linear-gradient(to right, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, F
     color: navy;
     font-size: 50px;
     font-style: oblique;
+/*Estilo de la tabla de experiencias */
 }
 #tabExp{
     text-align: center;
@@ -76,15 +77,28 @@ background: linear-gradient(to right, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, F
     font-size: smaller;
     vertical-align: middle;
 }
+#collog{
+    width: 10%;
+}
 #colemp{
-    width: 10px;
+    width: 17.5%;
+}
+#coldes{
+    width: 35%;
 }
 #colug{
-    width: 10px;
+    width: 15%;
 }
 #colcar{
-    width: 10px;
+    width: 17.5%;
 }
+#coltime{
+    width: 5%;
+}
+#nameCompany{
+    background-color: transparent;
+}
+
 #banner {
     display: block;
     margin: 0 auto;
@@ -127,38 +141,29 @@ footer{
 
 /* Barra de progreso */
 
-#progressbar4{
-    background:#057c0f;
-}
-#progressbar3{
-background:#eb3d11;
-}
-#progressbar2{
-background:#deeb11;
-    }
 #progressbar1{
-background:#3d99f9;
+background: #d60707;
         }
 
 .progress-title{
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 600;
     color: #333;
-    margin: 0 0 20px;
+    margin: 0 0 10px;
 }
 .progress{
-    height: 20px;
-    background: #d4d7e6;
+    height: 15px;
+    background: #d4d7e6b0;
     border-radius: 30px;
     box-shadow: none;
-    margin-bottom: 30px;
+    margin-bottom: 7px;
     overflow: visible;
 }
 .progress .progress-bar{
     border-radius: 30px;
     box-shadow: none;
     position: relative;
-    animation: animate-positive 2s;
+    animation: animate-positive 4s;
 }
 .progress .progress-bar:before{
     content: "";
@@ -176,8 +181,8 @@ background:#3d99f9;
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    background: #cbcbcb;
-    border: 8px solid #000;
+    background: #d60707;
+    border: 4px solid #d60707;
     position: absolute;
     bottom: -8px;
     right: 0;
@@ -185,4 +190,10 @@ background:#3d99f9;
 }
 @keyframes animate-positive{
     0%{ width: 0; }
+}
+#emailFooter:link{
+  font-size: x-large;
+  outline: #E7E9BB;
+  text-decoration-color: #E7E9BB;
+  padding: 2px 1px 0;
 }

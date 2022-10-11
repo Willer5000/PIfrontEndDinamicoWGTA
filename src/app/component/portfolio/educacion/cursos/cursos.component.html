@@ -19,7 +19,7 @@
      </tr>
      <tr *ngFor="let curso of coursesList">
        <td>
-         <a [href]="curso.url"><img [src]="curso.logo" width="80px" height="80px"></a>
+         <a [href]="curso.url"><img [src]="curso.logo" width="80px" height="80px"><i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i></a>
        </td>
        <td>
          <p>{{curso.institute}}<i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i></p>

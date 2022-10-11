@@ -1,46 +1,53 @@
 [{
     "title":"Habilidades personales",
-    "name1": "Trabajo en equipo",
-    "level1": "80%",
-    "name2": "Resolución de problemas",
-    "level2": "80%",
-    "name3": "Capacidad de análisis",
-    "level3": "85%",
-    "name4": "Capacidad de actualizar los conocimientos",
-    "level4": "90%"
-
+    "skilltype":[{
+    "name": "Trabajo en equipo",
+    "level": "80%"},
+    {"name": "Resolución de problemas",
+    "level": "80%"},
+    {"name": "Capacidad de análisis",
+    "level": "85%"},
+    {"name": "Capacidad de actualizar los conocimientos",
+    "level": "90%"
+    }]
 },
 {
     "title":"Habilidades informáticas",
-    "name1": "Microsoft Office (Excel, Word, PowePoint, Acces)",
-    "level1": "80%",
-    "name2": "Paquetetes de Sistemas de Información Geográfica (ArcGis, QGis)",
-    "level2": "85%",
-    "name3": "Paquetes Estadisticos y riego(SAS, Infostat, Excel, Cropwat, El Abro)",
-    "level3": "85%",
-    "name4": "Paquetes de Programación (HTML, CSS, JavasScript, TypeScript)",
-    "level4": "30%"
+    "skilltype":[{
+    "name": "Microsoft Office (Excel, Word, PowePoint, Acces)",
+    "level": "80%"},
+    {"name": "Paquetetes de Sistemas de Información Geográfica (ArcGis, QGis)",
+    "level": "85%"},
+    {"name": "Paquetes Estadisticos y riego(SAS, Infostat, Excel, Cropwat, El Abro)",
+    "level": "85%"},
+    {"name": "Paquetes de Programación (HTML, CSS, JavasScript, TypeScript)",
+    "level": "30%"
+    }]
 },
 {
     "title":"Habilidades técnicas",
-    "name1": "Elaboración y análisis de sistemas de información geográfica",
-    "level1": "75%",
-    "name2": "Análisis hidrológico y ambiental de Cuencas hidrográficas",
-    "level2": "60%",
-    "name3": "Diseño y analisis de experimentación agricola",
-    "level3": "80%",
-    "name4": "Analista de datos y programador",
-    "level4": "20%"
+    "skilltype":[{
+    "name": "Elaboración y análisis de sistemas de información geográfica",
+    "level": "75%"},
+    {"name": "Análisis hidrológico y ambiental de Cuencas hidrográficas",
+    "level": "60%"},
+    {"name": "Diseño y analisis de experimentación agricola",
+    "level": "80%"},
+    {"name": "Analista de datos y programador",
+    "level": "20%"
+    }]
 },
 {
     "title":"Idiomas",
-    "name1": "Español",
-    "level1": "100%",
-    "name2": "Inglés",
-    "level2": "65%",
-    "name3": "Frances",
-    "level3": "2%",
-    "name4": "Portugués",
-    "level4": "30%"
+    "skilltype":[{
+    "name": "Español",
+    "level": "100%"},
+    {"name": "Inglés",
+    "level": "65%"},
+    {"name": "Frances",
+    "level": "2%"},
+    {"name": "Portugués",
+    "level": "30%"
+    }]
 }
 ]
