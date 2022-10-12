@@ -4,7 +4,7 @@
   <section class="navbar navbar-expand-lg text-bg-dark" id="SecPerfil">
           <div class="container-fluid">
             <a class="navbar-brand" href="#"><i class="fa-sharp fa-solid fa-pen" id="editFotoPerfil"></i>
-            <img [src]="miPresentation.backImage" class="rounded-circle" alt="foto de perfil" width="150px" height="150px" id="Fotoperfil"></a>
+            <img [src]="miPresentation.profilePhoto" class="rounded-circle" alt="foto de perfil" width="150px" height="150px" id="Fotoperfil"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="ture" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -15,7 +15,11 @@
                       <table id="presentacion" cellpadding="0" cellspacing="0">
                   <tr>
                  <td> <b>Nombre:</b>  </td>
-                 <td><span>{{miPresentation.name}}</span><span>{{miPresentation.lastName}}</span><i class="fa-sharp fa-solid fa-pen" id="editDatosPerfil"></i></td>
+                 <td><span>{{miPresentation.names}}</span>
+                  <span>{{miPresentation.lastNames}}</span>
+                  <i class="fa-sharp fa-solid fa-pen" id="editDatosPerfil"></i>
+                </td>
+                  </tr> 
                  <tr>       
                    <td><b>Profesión:</b></td>
                    <td>
@@ -25,6 +29,15 @@
                     </li>
                   </ol>
                   </td>
+                 </tr>
+                 <tr>
+                  <td>
+                    <b>Correo Electronico</b>
+                  </td>
+                  <td>
+                  <span style="padding: 20px;">{{miPresentation.email}}<i class="fa-sharp fa-solid fa-pen" id="editDatosPerfil"></i></span>
+                </td>
+                 </tr>
           </table>
                   </a>
                 <li class="nav-item">

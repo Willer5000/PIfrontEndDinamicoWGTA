@@ -1,7 +1,7 @@
 {
-    "name": "Willer Gianni",
-    "lastName": " Torrico Arispe",
-    "backImage": "../assets/Willer.jfif",
+    "names": "Willer Gianni",
+    "lastNames": " Torrico Arispe",
+    "profilePhoto": "../assets/Willer.jfif",
     "banner": "../assets/Banner2.jpg",
     "ocupation": [{
         "profesion": " Ingeniero Agrónomo"},
@@ -9,7 +9,7 @@
         {"profesion": "Full Stack Developer Jr."}
     ],
     "aboutMe": "Soy un profesional, formado en las áreas de recursos hídricos, medio ambiente, sistemas de información geográfica e investigación agrícola. Actualmente, he conocido el mundo de la programación, que me ha parecido interesante y apasionante, por lo que actualmente soy estudiante de este maravilloso programa denominado “Argentina Programa”",
-   
+"email": "wtorrico@gmail.com",   
 "author": "Willer Gianni Torrico Arispe",
-"email": "wtorrico@gmail.com"
+"emailAuthor": "wtorrico@gmail.com"
 }
