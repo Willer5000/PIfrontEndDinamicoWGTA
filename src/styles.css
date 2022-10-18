@@ -146,7 +146,7 @@ background: #d60707;
         }
 
 .progress-title{
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
     color: #333;
     margin: 0 0 10px;
@@ -196,4 +196,15 @@ background: #d60707;
   outline: #E7E9BB;
   text-decoration-color: #E7E9BB;
   padding: 2px 1px 0;
+}
+.cajas[_ngcontent-adu-c50] {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+    flex-wrap: nowrap;
+    padding: 30px;
+}
+#contenidoSkill{
+    margin-left: 5%;
+    margin-right: 5%;
 }
