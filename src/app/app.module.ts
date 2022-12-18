@@ -13,7 +13,10 @@ import { SkillsComponent } from './component/portfolio/skills/skills.component';
 import { ProyectosComponent } from './component/portfolio/proyectos/proyectos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PrePosGradoComponent } from './component/portfolio/educacion/pre-pos-grado/pre-pos-grado.component';
-import { CursosComponent } from './component/portfolio/educacion/cursos/cursos.component'
+import { CursosComponent } from './component/portfolio/educacion/cursos/cursos.component';
+import { IniciarSesionComponent } from './component/iniciar-sesion/iniciar-sesion.component';
+import { OtrosComponent } from './component/otros/otros.component'
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,12 +30,15 @@ import { CursosComponent } from './component/portfolio/educacion/cursos/cursos.c
     SkillsComponent,
     ProyectosComponent,
     PrePosGradoComponent,
-    CursosComponent
+    CursosComponent,
+    IniciarSesionComponent,
+    OtrosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule 
+    HttpClientModule,
+    ReactiveFormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
