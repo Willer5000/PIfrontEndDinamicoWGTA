@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { PortfolioService } from './../../servicios/portfolio.service';
 
 @Component({
@@ -8,9 +9,10 @@ import { PortfolioService } from './../../servicios/portfolio.service';
 })
 export class HeaderComponent implements OnInit {
 
-  miHeader:any;
+  /*miHeader:any;
 
   constructor(private datosPortfolio:PortfolioService) { }
+
 
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data=>{
@@ -18,6 +20,12 @@ export class HeaderComponent implements OnInit {
 
     this.miHeader=data;     
     });
+  }*/
+  constructor(private router:Router){}
+  ngOnInit(): void {;
   }
 
+  login(){
+    this.router.navigate(['/login'])
+  }
 }

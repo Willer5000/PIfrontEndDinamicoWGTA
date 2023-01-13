@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/servicios/persona.service';
 import { PortfolioService } from './../../servicios/portfolio.service';
 
 @Component({
@@ -7,7 +9,15 @@ import { PortfolioService } from './../../servicios/portfolio.service';
   styleUrls: ['./presentacion.component.css']
 })
 export class PresentacionComponent implements OnInit {
+  persona: persona = new persona("","","","","","","","","");
+  
+  constructor(public personaService: PersonaService){}
 
+    ngOnInit(): void{
+      this.personaService.getPersona().subscribe(data => (this.persona = data))
+        }
+
+/*
   miPresentation:any;
   miOcupation: any;
 
@@ -23,6 +33,6 @@ export class PresentacionComponent implements OnInit {
         this.datosPortfolio.obtenerDatos().subscribe(data2=>{
           this.miOcupation=data2.ocupation;
         });
-      }
+      }*/
     
     }
