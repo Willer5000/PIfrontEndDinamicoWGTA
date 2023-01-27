@@ -21,7 +21,7 @@ export class InterceptorService implements HttpInterceptor{
                     }
                 })
             }
-            console.log("Interceptor está corrienfo" + JSON.stringify)
+            console.log("Interceptor está corriendo" + JSON.stringify)
             return next.handle(req);
         
     }

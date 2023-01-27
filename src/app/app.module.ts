@@ -14,10 +14,13 @@ import { ProyectosComponent } from './component/portfolio/proyectos/proyectos.co
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { PrePosGradoComponent } from './component/portfolio/educacion/pre-pos-grado/pre-pos-grado.component';
 import { CursosComponent } from './component/portfolio/educacion/cursos/cursos.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './component/home/home.component';
 import { LoginComponent } from './component/login/login.component';
 import { InterceptorService } from './servicios/interceptor-service';
+import { NewExperienciaComponent } from './component/portfolio/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './component/portfolio/experiencia/edit-experiencia.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,18 +36,18 @@ import { InterceptorService } from './servicios/interceptor-service';
     CursosComponent,
     HomeComponent,
     LoginComponent,
-
+    NewExperienciaComponent,
+    EditExperienciaComponent,
   ],
   imports: [
-  
-  BrowserModule,
+    BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    //FormsModule
-   ReactiveFormsModule 
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  providers: 
-  [{  provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true }],
+  providers: [{  provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

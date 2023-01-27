@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { persona } from 'src/app/model/persona.model';
 import { PersonaService } from 'src/app/servicios/persona.service';
-import { PortfolioService } from './../../servicios/portfolio.service';
 
 @Component({
   selector: 'app-presentacion',

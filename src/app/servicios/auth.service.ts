@@ -7,7 +7,13 @@ import { map } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
- url = 'http://localhost:8080/auth/login';
+  isAuthenticated(): boolean {
+    throw new Error('Method not implemented.');
+  }
+
+  //url = "http://localhost:8080/auth/login";
+ url = 'https://wgtabackend.onrender.com/auth/login';
+
   currentUserSubject:BehaviorSubject<any>
   constructor(private http: HttpClient) {
     console.log("El servicio de autenticacion esta corriendo")

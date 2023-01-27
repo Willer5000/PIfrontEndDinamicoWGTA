@@ -4,37 +4,52 @@
         <b>Experiencia</b>
       </button>
     </h1>
+
+
     <div id="collapseOne" class="container-fluid accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body table-responsive-lg table-responsive-md table-responsive-sm table-responsive-xl table-responsive-xxl">
-          <table class="table table-light" id="tabExp" data-bs-toggle="collapse">
+        
+        <div class="col-lg-2">
+          <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="UsuarioAutenticado">
+            Nueva Experiencia
+          </button>
+        </div>
+
+        <table class="table table-light" id="tabExp" data-bs-toggle="collapse">
                   <tr>
                       <th id="collog"><strong>LOGOTIPO</strong></th>
                       <th id="colemp"><strong>EMPRESA / INSTITUCIÓN</strong></th>
                       <th id="coldes"><strong>DESCRIPCIÓN</strong></th>
                       <th id="colug"><strong>LUGAR</strong></th>
                       <th id="colcar"><strong>CARGO</strong></th>
-                      <th colspan="2" id="coltime"><strong>PERIODO DE TRABAJO</strong><div>(Desde, Hasta)</div>
+                      <th colspan="2" id="coltime"><strong>PERIODO DE TRABAJO</strong><div>(Desde, Hasta)</div></th>
+                        <th></th>
+                        <th></th>
                   </tr>
-              <tr *ngFor="let experiencias of experienceList">                       
-                  <td><img [src]="experiencias.logo" width="125px" height="90px" id="CochaGober">
-                    <i class="fa-sharp fa-solid fa-pen" id="editDatosExp"><i class="fa-solid fa-xmark" id="editDatosExp"></i>
-                  </i>
+              <tr *ngFor="let Experiencia of experiencia">                       
+                  <td><img [src]="Experiencia.logoEx" width="125px" height="90px" id="CochaGober">
+                    
                 </td>
-         <td><a [href]="experiencias.url" id="nameCompany">{{experiencias.company}}</a>
-          <i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i>
+         <td><a [href]="Experiencia.urlEx" id="nameCompany">{{Experiencia.empresaEx}}</a>
+          
         </td>
          <td>
           <ul type="disc" id="DescExp">
-              <li *ngFor="let activity of experiencias.activities" id="actividadesExp">
-                <span>{{activity.activity}}</span>
-                <i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i><i class="fa-solid fa-xmark" id="editDatosExp"></i>     
-            </li>
-          </ul>
+                              <span>{{Experiencia.descripcionEx}}</span>
+                         </ul>
          </td>
-         <td>{{experiencias.location}}<i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i></td>
-         <td>{{experiencias.jobPost}}<i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i></td>
-         <td><time>{{experiencias.workingPeriod.since}}</time><i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i></td>
-         <td><time>{{experiencias.workingPeriod.then}}</time><i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i></td>
+         <td>{{Experiencia.lugarEx}}</td>
+         <td>{{Experiencia.cargoEx}}</td>
+         <td><time>{{Experiencia.desdeEx}}</time></td>
+         <td><time>{{Experiencia.hastaEx}}</time></td>
+         <td *ngIf = "UsuarioAutenticado">
+          <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+          <i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i>EDITAR</button>
+        </td>         
+         <td *ngIf = "UsuarioAutenticado">
+          <button class="btn btn-danger" (click)="deleteExperiencia(Experiencia.id)">
+          <i class="fa-solid fa-xmark" id="editDatosExp"></i>BORRAR</button>
+        </td>
       </tr> 
           </table>
       </div>

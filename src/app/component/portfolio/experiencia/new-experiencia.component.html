@@ -1,0 +1,38 @@
+<div class="container">
+    <form [formGroup]="experienciaForm" (ngSubmit)="onCreate()">
+      <div class="form-group">
+        <label for="logoEx">Logo de la empresa</label>
+        <input type="text" class="form-control" id="logoEx" formControlName="logoEx">
+      </div>
+      <div class="form-group">
+        <label for="urlEx">URL de la empresa</label>
+        <input type="text" class="form-control" id="urlEx" formControlName="urlEx">
+      </div>
+      <div class="form-group">
+        <label for="empresaEx">Nombre de la empresa</label>
+        <input type="text" class="form-control" id="empresaEx" formControlName="empresaEx">
+      </div>
+      <div class="form-group">
+        <label for="descripcionEx">Descripción de la experiencia</label>
+        <input type="text" class="form-control" id="descripcionEx" formControlName="descripcionEx">
+      </div>
+      <div class="form-group">
+        <label for="lugarEx">Lugar de trabajo</label>
+        <input type="text" class="form-control" id="lugarEx" formControlName="lugarEx">
+      </div>
+      <div class="form-group">
+        <label for="cargoEx">Cargo desempeñado</label>
+        <input type="text" class="form-control" id="cargoEx" formControlName="cargoEx">
+      </div>
+      <div class="form-group">
+        <label for="desdeEx">Fecha de inicio</label>
+        <input type="text" class="form-control" id="desdeEx" formControlName="desdeEx">
+      </div>
+      <div class="form-group">
+        <label for="hastaEx">Fecha de fin</label>
+        <input type="text" class="form-control" id="hastaEx" formControlName="hastaEx">
+      </div>
+      <button type="submit" class="btn btn-primary">Añadir experiencia</button>
+    </form>
+  </div>
+  
