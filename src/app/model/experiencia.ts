@@ -1,23 +1,23 @@
 export class Experiencia {
     id? : Number;
-    logoEx : String;
-    urlEx : String;
-    empresaEx : String;
-    descripcionEx : String;
-    lugarEx: String;
-    cargoEx: String;
-    desdeEx: String;
-    hastaEx: String;
+    logoex : String;
+    urlex : String;
+    empresaex : String;
+    descripcionex : String;
+    lugarex: String;
+    cargoex: String;
+    desdeex: String;
+    hastaex: String;
 
- constructor(logoEx: String, urlEx: String, empresaEx: String, descripcionEx: String, lugarEx: String, cargoEx: String, desdeEx: String, hastaEx: String){
-    this.logoEx = logoEx;
-    this.urlEx = urlEx;
-    this.empresaEx = empresaEx;
-    this.descripcionEx = descripcionEx;
-    this.lugarEx = lugarEx;
-    this.cargoEx = cargoEx;
-    this.desdeEx = desdeEx;
-    this.hastaEx = hastaEx;
+ constructor(logoex: String, urlex: String, empresaex: String, descripcionex: String, lugarex: String, cargoex: String, desdeex: String, hastaex: String){
+    this.logoex = logoex;
+    this.urlex = urlex;
+    this.empresaex = empresaex;
+    this.descripcionex = descripcionex;
+    this.lugarex = lugarex;
+    this.cargoex = cargoex;
+    this.desdeex = desdeex;
+    this.hastaex = hastaex;
 
         }
 }

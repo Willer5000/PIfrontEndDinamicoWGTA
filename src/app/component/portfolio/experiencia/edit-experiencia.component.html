@@ -1,36 +1,36 @@
-<div class="container" *ngIf="expLab">
+<div class="container" *ngIf="explab">
     <form (ngSubmit)="onUpdate()" novalidate>
       <div class="form-group">
         <label for="logoEx">Logo de la empresa</label>
-        <input type="text" class="form-control" [(ngModel)]="expLab.logoEx" id="logoEx" name="logoEx">
+        <input type="text" class="form-control" [(ngModel)]="explab.logoex" id="logoEx" name="logoEx">
       </div>
       <div class="form-group">
         <label for="urlEx">URL de la empresa</label>
-        <input type="text" class="form-control" [(ngModel)]="expLab.urlEx" id="urlEx" name="urlEx">
+        <input type="text" class="form-control" [(ngModel)]="explab.urlex" id="urlEx" name="urlEx">
       </div>
       <div class="form-group">
         <label for="empresaEx">Nombre de la empresa</label>
-        <input type="text" class="form-control" [(ngModel)]="expLab.empresaEx" id="empresaEx" name="empresaEx">
+        <input type="text" class="form-control" [(ngModel)]="explab.empresaex" id="empresaEx" name="empresaEx">
       </div>
       <div class="form-group">
         <label for="descripcionEx">Descripción de la experiencia</label>
-        <input type="text" class="form-control" [(ngModel)]="expLab.descripcionEx" id="descripcionEx" name="descripcionEx">
+        <input type="text" class="form-control" [(ngModel)]="explab.descripcionex" id="descripcionEx" name="descripcionEx">
       </div>
       <div class="form-group">
         <label for="lugarEx">Lugar de trabajo</label>
-        <input type="text" class="form-control" [(ngModel)]="expLab.lugarEx" id="lugarEx" name="lugarEx">
+        <input type="text" class="form-control" [(ngModel)]="explab.lugarex" id="lugarEx" name="lugarEx">
       </div>
       <div class="form-group">
         <label for="cargoEx">Cargo desempeñado</label>
-        <input type="text" class="form-control" [(ngModel)]="expLab.cargoEx" id="cargoEx" name="cargoEx">
+        <input type="text" class="form-control" [(ngModel)]="explab.cargoex" id="cargoEx" name="cargoEx">
       </div>
       <div class="form-group">
         <label for="desdeEx">Fecha de inicio</label>
-        <input type="text" class="form-control" [(ngModel)]="expLab.desdeEx" id="desdeEx" name="desdeEx">
+        <input type="text" class="form-control" [(ngModel)]="explab.desdeex" id="desdeEx" name="desdeEx">
       </div>
       <div class="form-group">
         <label for="hastaEx">Fecha de fin</label>
-        <input type="text" class="form-control" [(ngModel)]="expLab.hastaEx" id="hastaEx" name="hastaEx">
+        <input type="text" class="form-control" [(ngModel)]="explab.hastaex" id="hastaEx" name="hastaEx">
       </div>
       <button type="submit" class="btn btn-primary">Actualizar experiencia</button>
     </form>

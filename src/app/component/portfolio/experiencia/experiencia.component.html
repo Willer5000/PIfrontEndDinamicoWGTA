@@ -27,21 +27,21 @@
                         <th></th>
                   </tr>
               <tr *ngFor="let Experiencia of experiencia">                       
-                  <td><img [src]="Experiencia.logoEx" width="125px" height="90px" id="CochaGober">
+                  <td><img [src]="Experiencia.logoex" width="125px" height="90px" id="CochaGober">
                     
                 </td>
-         <td><a [href]="Experiencia.urlEx" id="nameCompany">{{Experiencia.empresaEx}}</a>
+         <td><a [href]="Experiencia.urlex" id="nameCompany">{{Experiencia.empresaex}}</a>
           
         </td>
          <td>
           <ul type="disc" id="DescExp">
-                              <span>{{Experiencia.descripcionEx}}</span>
+                              <span>{{Experiencia.descripcionex}}</span>
                          </ul>
          </td>
-         <td>{{Experiencia.lugarEx}}</td>
-         <td>{{Experiencia.cargoEx}}</td>
-         <td><time>{{Experiencia.desdeEx}}</time></td>
-         <td><time>{{Experiencia.hastaEx}}</time></td>
+         <td>{{Experiencia.lugarex}}</td>
+         <td>{{Experiencia.cargoex}}</td>
+         <td><time>{{Experiencia.desdeex}}</time></td>
+         <td><time>{{Experiencia.hastaex}}</time></td>
          <td *ngIf = "UsuarioAutenticado">
           <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
           <i class="fa-sharp fa-solid fa-pen" id="editDatosExp"></i>EDITAR</button>

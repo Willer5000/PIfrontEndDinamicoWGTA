@@ -8,7 +8,7 @@ import { Experiencia } from '../model/experiencia';
 })
 export class SExperienciaService {
 
-  expURL = "https://wgtabackend.onrender.com/explab"
+  expURL = "https://wgtabackend.onrender.com/explab/"
   constructor(private http: HttpClient) { }
 
   public getExperiencia(): Observable<Experiencia[]>{
