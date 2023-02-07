@@ -17,7 +17,7 @@ export class GuardGuard implements CanActivate {
     if (currentUser && currentUser.token) {
       return true;
     } else {
-      this.router.navigate(['/home']); // this.router.navigate(['/login']);
+      this.router.navigate(['/login']); // this.router.navigate(['/login']);
       return false;
     }
   }
