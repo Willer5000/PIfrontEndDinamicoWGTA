@@ -2,6 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Experiencia } from '../model/experiencia';
+import { catchError, of } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +13,16 @@ export class SExperienciaService {
   expURL = "https://wgtabackend.onrender.com/explab/"
   constructor(private http: HttpClient) { }
 
+  //public getExperiencia(): Observable<Experiencia[]>{
+   // return this.http.get<Experiencia[]>(this.expURL+'lista');
+  //}
   public getExperiencia(): Observable<Experiencia[]>{
-    return this.http.get<Experiencia[]>(this.expURL+'lista');
+    return this.http.get<Experiencia[]>(this.expURL+'lista').pipe(
+      catchError(error => {
+        console.error(error);
+        return of([]);
+      })
+    );
   }
   public detail(id: number): Observable<Experiencia>{
     return this.http.get<Experiencia>(this.expURL + `detail/${id}`)
