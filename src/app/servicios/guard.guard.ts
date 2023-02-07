@@ -42,7 +42,7 @@ export class GuardGuard implements CanActivate {
       if (currentUser && currentUser.token) {
         return true;
       } else {
-        //this.rutas.navigate(['/login']);
+        this.rutas.navigate(['/login']);
         return false;
       }
     } else {
