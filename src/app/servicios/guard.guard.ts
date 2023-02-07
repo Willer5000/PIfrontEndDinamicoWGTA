@@ -43,7 +43,7 @@ export class GuardGuard implements CanActivate {
     return true;
   }
   else{
-    this.rutas.navigate(['/login']);//this.rutas.navigate(['/login']);
+    //this.rutas.navigate(['/login']);//this.rutas.navigate(['/home']);
     return false;
   }
 }
