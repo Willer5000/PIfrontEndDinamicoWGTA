@@ -10,20 +10,13 @@ import { GuardGuard } from './servicios/guard.guard';
 const routes: Routes = [
   {path:'home',component:HomeComponent, canActivate:[GuardGuard]},
   {path:'login',component:LoginComponent},
-  {path:'', redirectTo:'home', pathMatch:'full'}, //{path:'', redirectTo:'login', pathMatch:'full'},
+  {path:'', redirectTo:'home', pathMatch:'full'},
   {path: 'nuevaexp', component: NewExperienciaComponent},
   {path: 'editexp/:id', component: EditExperienciaComponent}
-
-];
-
-/*
-[
-  {path:'', component: HomeComponent},
-  {path:'login', component: LoginComponent}
-];*/
-
-@NgModule({
+  ];
+  
+  @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
-})
-export class AppRoutingModule { }
+  })
+  export class AppRoutingModule { }

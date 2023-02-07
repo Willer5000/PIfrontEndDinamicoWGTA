@@ -62,11 +62,11 @@
           } 
 #editDatosExp{
             text-indent: 0.5em;
-            color: black;
+            color: rgb(245, 244, 244);
           }      
 #editDatosEdu{
             text-indent: 0.5em;
-            color: black;
+            color: rgb(248, 243, 243);
           }              
 #Fotoperfil{
     position: relative;
