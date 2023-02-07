@@ -10,7 +10,8 @@ import { GuardGuard } from './servicios/guard.guard';
 const routes: Routes = [
   {path:'home',component:HomeComponent, canActivate:[GuardGuard]},
   {path:'login',component:LoginComponent},
-  {path:'', redirectTo:'login', pathMatch:'full'},
+  //{path:'', redirectTo:'login', pathMatch:'full'},
+  {path:'', component: HomeComponent, canActivate:[GuardGuard]},
   {path: 'nuevaexp', component: NewExperienciaComponent},
   {path: 'editexp/:id', component: EditExperienciaComponent}
 
