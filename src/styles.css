@@ -39,7 +39,7 @@
     background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #presentacion{
-      color: rgb(250, 249, 248);
+      color: rgb(236, 233, 229);
         font-size: small;
         }
 #editBanner{
@@ -47,7 +47,7 @@
             right: 130pt;
             top: 100px;
             z-index: auto;
-            color: rgb(0, 0, 0);
+            color: rgb(250, 245, 245);
 }
 #editFotoPerfil{
             position:static;
@@ -58,7 +58,7 @@
           }
 #editDatosPerfil{
             text-indent: 0.5em;
-            color: rgb(0, 8, 8);
+            color: rgb(243, 247, 247);
           } 
 #editDatosExp{
             text-indent: 0.5em;
