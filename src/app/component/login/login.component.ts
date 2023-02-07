@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+/*import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from 'src/app/servicios/auth.service';
 import { Router } from '@angular/router';
@@ -35,9 +35,9 @@ export class LoginComponent implements OnInit {
     });
   }
 }
-
+*/
 //OPCION B
-/*import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from 'src/app/servicios/auth.service';
 import { Router } from '@angular/router';
@@ -74,7 +74,7 @@ export class LoginComponent implements OnInit {
       })
     }
 }
-*/
+
 /*@Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
