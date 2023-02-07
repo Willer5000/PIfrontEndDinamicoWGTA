@@ -18,7 +18,7 @@ isLoading = false;
 private unsubscribe$ = new Subject<void>();
 
 constructor(private experienciaService: SExperienciaService, private router: Router) {
-this.UsuarioAutenticado = true;
+this.UsuarioAutenticado = false;//this.UsuarioAutenticado = true;
 }
 
 ngOnInit(): void {
