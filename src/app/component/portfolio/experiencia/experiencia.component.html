@@ -1,4 +1,4 @@
-<article class="accordion-item">
+<!--<article class="accordion-item">
     <h1 class="accordion-header" id="headingOne">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"  id="Page2Bar">
         <b>Experiencia</b>
@@ -11,8 +11,7 @@
         
         <div class="col-lg-2">
        <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="UsuarioAutenticado">
-             <!--button type="button" class="btn btn-dark" routerLink="/nuevaexp">-->
-            Nueva Experiencia
+                        Nueva Experiencia
           </button>
         </div>
 
@@ -55,5 +54,65 @@
           </table>
       </div>
     </div>
-</article>
+</article>-->
+<article class="accordion-item">
+  <h1 class="accordion-header" id="headingOne">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" id="Page2Bar">
+      <b>Experiencia</b>
+    </button>
+  </h1>
+
+  <div id="collapseOne" class="container-fluid accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+    <div class="accordion-body table-responsive">
+      
+      <div class="d-flex justify-content-between mb-3">
+        <div>
+          <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="UsuarioAutenticado">
+            Nueva Experiencia
+          </button>
+        </div>
+      </div>
+
+      <table class="table table-light" id="tabExp" data-bs-toggle="collapse">
+        <thead>
+          <tr>
+            <th id="collog"><strong>LOGOTIPO</strong></th>
+            <th id="colemp"><strong>EMPRESA / INSTITUCIÓN</strong></th>
+            <th id="coldes"><strong>DESCRIPCIÓN</strong></th>
+            <th id="colug"><strong>LUGAR</strong></th>
+            <th id="colcar"><strong>CARGO</strong></th>
+            <th colspan="2" id="coltime"><strong>PERIODO DE TRABAJO</strong><div>(Desde, Hasta)</div></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let Experiencia of experiencia">                       
+            <td><img [src]="Experiencia.logoex" width="125px" height="90px" id="CochaGober"></td>
+            <td>
+              <a [href]="Experiencia.urlex" id="nameCompany">{{Experiencia.empresaex}}</a>
+            </td>
+            <td>
+              <ul type="disc" id="DescExp">
+                <span>{{Experiencia.descripcionex}}</span>
+              </ul>
+            </td>
+            <td>{{Experiencia.lugarex}}</td>
+            <td>{{Experiencia.cargoex}}</td>
+            <td><time>{{Experiencia.desdeex}}</time></td>
+            <td><time>{{Experiencia.hastaex}}</time></td>
+            <td *ngIf = "UsuarioAutenticado">
+              <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+                Editar</button>
+              </td>
+              <td *ngIf = "UsuarioAutenticado">
+              <button class="btn btn-light" (click)="deleteExperiencia(Experiencia.id)">Eliminar</button>
+              </td>
+              </tr>
+              </tbody>
+              </table>
+              </div>
+              </div>
+              
+                </article>
 
