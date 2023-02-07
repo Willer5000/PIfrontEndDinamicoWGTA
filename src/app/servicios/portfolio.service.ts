@@ -9,22 +9,25 @@ export class PortfolioService {
 
   constructor(private http:HttpClient) { }
 
-  obtenerDatos():Observable<any>{
-    return this.http.get('./assets/data/data.json');
-  }
+ 
   datosDeEducacion():Observable<any>{
     return this.http.get('./assets/data/educacion.json');
   }
   datosDeCursos():Observable<any>{
     return this.http.get('./assets/data/cursos.json');
   }
-  datosDeExperiencia():Observable<any>{
-    return this.http.get('./assets/data/experiencia.json');
+
+  datosOtrosEducacion():Observable<any>{
+    return this.http.get('./assets/data/data.json');
   }
+
   datosDeHabilidades():Observable<any>{
     return this.http.get('./assets/data/habilidades.json');
   }
   datosDeProyectos():Observable<any>{
     return this.http.get('./assets/data/proyectos.json');
+  }
+  datosDeFooter():Observable<any>{
+    return this.http.get('./assets/data/data.json');
   }
 }

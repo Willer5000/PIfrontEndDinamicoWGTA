@@ -13,7 +13,7 @@ export class FooterComponent implements OnInit {
   constructor(private datosPortfolio:PortfolioService) {}
 
       ngOnInit(): void {
-        this.datosPortfolio.obtenerDatos().subscribe(data=>{
+        this.datosPortfolio.datosDeFooter().subscribe(data=>{
              console.log(data);
     
         this.miFooter=data;     
