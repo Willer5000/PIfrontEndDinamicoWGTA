@@ -102,11 +102,11 @@
             <td><time>{{Experiencia.desdeex}}</time></td>
             <td><time>{{Experiencia.hastaex}}</time></td>
             <td *ngIf = "UsuarioAutenticado">
-              <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+              <button class="btn btn-dark" routerLink="/editexp/{{Experiencia.id}}">
                 Editar</button>
               </td>
               <td *ngIf = "UsuarioAutenticado">
-              <button class="btn btn-light" (click)="deleteExperiencia(Experiencia.id)">Eliminar</button>
+              <button class="btn btn-danger" (click)="deleteExperiencia(Experiencia.id)">Eliminar</button>
               </td>
               </tr>
               </tbody>
