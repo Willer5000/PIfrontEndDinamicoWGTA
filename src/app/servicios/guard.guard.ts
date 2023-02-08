@@ -8,25 +8,32 @@ import { AuthService } from './auth.service';
   providedIn: 'root'
 })
 export class GuardGuard implements CanActivate {
- constructor(private authService:AuthService, private rutas:Router)
- {}
- canActivate(
-  route: ActivatedRouteSnapshot,
-  state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    let currentUser = this.authService.UsuarioAutenticado;
+  constructor(private authService: AuthService, private router: Router) {}
+
+  canActivate(
+    route: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot
+  ): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+    const currentUser = this.authService.UsuarioAutenticado;
+
     if (currentUser && currentUser.token) {
-      if (route.routeConfig.path === "nuevaexp" || route.routeConfig.path === "editexp") {
-        return true;
+      if (route.routeConfig.path === 'nuevaexp' || route.routeConfig.path === 'editexp') {
+        if (currentUser.author) {
+          return true;
+        } else {
+          this.router.navigate(['/']);
+          return false;
+        }
       } else {
-        this.rutas.navigate(['/']);
-        return false;
+        return true;
       }
     } else {
-      this.rutas.navigate(['/login']);
+      this.router.navigate(['/login']);
       return false;
     }
   }
 }
+
 
 
 //Plan B
