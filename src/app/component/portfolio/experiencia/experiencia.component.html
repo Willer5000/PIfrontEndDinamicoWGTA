@@ -106,7 +106,7 @@
                 Editar</button>
               </td>
               <td *ngIf = "UsuarioAutenticado">
-              <button class="btn btn-danger" (click)="deleteExperiencia(Experiencia.id)">Eliminar</button>
+                <button class="btn btn-danger" (click)="deleteExperiencia(+Experiencia.id)">Eliminar</button>
               </td>
               </tr>
               </tbody>
