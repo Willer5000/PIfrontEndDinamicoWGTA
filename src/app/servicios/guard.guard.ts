@@ -9,11 +9,13 @@ providedIn: 'root'
 })
 export class GuardGuard implements CanActivate {
 constructor(private authService: AuthService, private router: Router) {}
+
 canActivate(
 route: ActivatedRouteSnapshot,
-state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+state: RouterStateSnapshot
+): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
 let currentUser = this.authService.UsuarioAutenticado;
-if (route.routeConfig.path === "nuevaexp" || route.routeConfig.path === "editexp") {
+if (route.routeConfig.path === 'nuevaexp' || route.routeConfig.path === 'editexp' || route.routeConfig.path === 'eliminexp') {
 if (currentUser && currentUser.token) {
 return true;
 } else {
