@@ -5,26 +5,25 @@ import { Observable } from 'rxjs';
 import { AuthService } from './auth.service';
 
 @Injectable({
-  providedIn: 'root'
+providedIn: 'root'
 })
 export class GuardGuard implements CanActivate {
- constructor(private authService:AuthService, private rutas:Router)
- {}
- canActivate(
-  route: ActivatedRouteSnapshot,
-  state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    let currentUser = this.authService.UsuarioAutenticado;
-    if (route.routeConfig.path === "nuevaexp" || route.routeConfig.path === "editexp") {
-      if (currentUser && currentUser.token) {
-        return true;
-      } else {
-        this.rutas.navigate(['/login']);
-        return false;
-      }
-    } else {
-      return true;
-    }
-  }
+constructor(private authService: AuthService, private router: Router) {}
+canActivate(
+route: ActivatedRouteSnapshot,
+state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+let currentUser = this.authService.UsuarioAutenticado;
+if (route.routeConfig.path === "nuevaexp" || route.routeConfig.path === "editexp") {
+if (currentUser && currentUser.token) {
+return true;
+} else {
+this.router.navigate(['/login']);
+return false;
+}
+} else {
+return true;
+}
+}
 }
 
 //Plan B
