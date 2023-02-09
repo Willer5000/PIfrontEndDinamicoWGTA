@@ -55,7 +55,8 @@
       </div>
     </div>
 </article>-->
-<article class="accordion-item">
+<!--OPCION A-->
+<!--<article class="accordion-item">
   <h1 class="accordion-header" id="headingOne">
     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" id="Page2Bar">
       <b>Experiencia</b>
@@ -114,5 +115,61 @@
               </div>
               </div>
               
+                </article>-->
+<!--OPCION B-->
+                <article class="accordion-item">
+                  <h1 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" id="Page2Bar">
+                      <b>Experiencia</b>
+                    </button>
+                  </h1>
+                  <div id="collapseOne" class="container-fluid accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body table-responsive">
+                  <div class="d-flex justify-content-between mb-3">
+                    <div>
+                      <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="UsuarioAutenticado">
+                        Nueva Experiencia
+                      </button>
+                    </div>
+                  </div>
+                
+                  <table class="table table-light">
+                    <thead>
+                      <tr>
+                        <th><strong>LOGOTIPO</strong></th>
+                        <th><strong>EMPRESA / INSTITUCIÓN</strong></th>
+                        <th><strong>DESCRIPCIÓN</strong></th>
+                        <th><strong>LUGAR</strong></th>
+                        <th><strong>CARGO</strong></th>
+                        <th colspan="2"><strong>PERIODO DE TRABAJO</strong><div>(Desde, Hasta)</div></th>
+                        <th *ngIf = "UsuarioAutenticado"></th>
+                        <th *ngIf = "UsuarioAutenticado"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let Experiencia of experiencia">                       
+                        <td><img [src]="Experiencia.logoex" width="125px" height="90px"></td>
+                        <td>
+                          <a [href]="Experiencia.urlex">{{Experiencia.empresaex}}</a>
+                        </td>
+                        <td>
+                          {{Experiencia.descripcionex}}
+                        </td>
+                        <td>{{Experiencia.lugarex}}</td>
+                        <td>{{Experiencia.cargoex}}</td>
+                        <td><time>{{Experiencia.desdeex}}</time></td>
+                        <td><time>{{Experiencia.hastaex}}</time></td>
+                        <td *ngIf = "UsuarioAutenticado">
+                          <button class="btn btn-dark" routerLink="/editexp/{{Experiencia.id}}">
+                            Editar</button>
+                        </td>
+                        <td *ngIf = "UsuarioAutenticado">
+                          <button class="btn btn-danger" (click)="deleteExperiencia(+Experiencia.id)">Eliminar</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                    </div>
+                  </div>
                 </article>
 
