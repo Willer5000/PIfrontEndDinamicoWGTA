@@ -40,6 +40,72 @@ this.UsuarioAutenticado = this.authService.isAuthenticated();
 }
 
 deleteExperiencia(id: number) {
+if (this.UsuarioAutenticado) {
+  this.isLoading = true;
+  this.experienciaService.delete(id)
+  .pipe(
+    finalize(() => this.isLoading = false),
+    takeUntil(this.unsubscribe$)
+  )
+  .subscribe(
+    () => {
+      this.experiencia = this.experiencia.filter(exp => exp.id !== id);
+    },
+    error => {
+      console.error(error);
+    }
+  );
+}
+}
+
+ngOnDestroy() {
+this.unsubscribe$.next();
+this.unsubscribe$.complete();
+}
+}
+
+//OPCION B
+/*import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Experiencia } from 'src/app/model/experiencia';
+import { SExperienciaService } from 'src/app/servicios/s-experiencia.service';
+import { Router } from '@angular/router';
+import { finalize, takeUntil } from 'rxjs/operators';
+import { Subject } from 'rxjs';
+import { AuthService } from 'src/app/servicios/auth.service';
+
+@Component({
+selector: 'app-experiencia',
+templateUrl: './experiencia.component.html',
+styleUrls: ['./experiencia.component.css']
+})
+export class ExperienciaComponent implements OnInit, OnDestroy {
+
+experiencia: Experiencia[] = [];
+UsuarioAutenticado = false;
+isLoading = false;
+private unsubscribe$ = new Subject<void>();
+
+constructor(private experienciaService: SExperienciaService, private router: Router, private authService: AuthService) { }
+
+ngOnInit(): void {
+this.isLoading = true;
+this.experienciaService.getExperiencia()
+.pipe(
+finalize(() => this.isLoading = false),
+takeUntil(this.unsubscribe$)
+)
+.subscribe(
+data => {
+this.experiencia = data;
+},
+error => {
+console.error(error);
+}
+);
+this.UsuarioAutenticado = this.authService.isAuthenticated();
+}
+
+deleteExperiencia(id: number) {
 this.isLoading = true;
 this.experienciaService.delete(id)
 .pipe(
@@ -60,8 +126,8 @@ ngOnDestroy() {
 this.unsubscribe$.next();
 this.unsubscribe$.complete();
 }
-}
-//OPCION B
+}*/
+//OPCION C
 /*
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Experiencia } from 'src/app/model/experiencia';
@@ -125,7 +191,7 @@ export class ExperienciaComponent implements OnInit, OnDestroy {
 }
 */
 /*
-//OPCION C
+//OPCION D
 import { Component, OnInit } from '@angular/core';
 import { Experiencia } from 'src/app/model/experiencia';
 import { SExperienciaService } from 'src/app/servicios/s-experiencia.service';
@@ -183,7 +249,7 @@ this.unsubscribe$.complete();
 }
 }
 */
-//OPCION D
+//OPCION E
 /*import { Component, OnInit } from '@angular/core';
 import { Experiencia } from 'src/app/model/experiencia';
 import { SExperienciaService } from 'src/app/servicios/s-experiencia.service';
@@ -224,49 +290,3 @@ deleteExperiencia(id: Number) {
   }
 }
 */
-//OPCION E
-  // Utilizar metodos para crear, actualizar, eliminar y obtener detalles de experiencias
-/*save(experiencia: Experiencia){
-  this.experienciaService.save(experiencia).subscribe(
-  (data) => {
-  console.log(data);
-  },
-  (error) => {
-  console.log(error);
-  }
-  );
-  }
-update(id: number, experiencia: Experiencia){
-  this.experienciaService.update(id, experiencia).subscribe(
-  (data) => {
-  console.log(data);
-  },
-  (error) => {
-  console.log(error);
-  }
-  );
-  }
-delete(id: number){
-  this.experienciaService.delete(id).subscribe(
-  (data) => {
-  console.log(data);
-  },
-  (error) => {
-  console.log(error);
-  }
-  );
-  }*/
-
-
-
-/*
-  experienceList: any[]=[];
-
-  constructor(private datosPortfolio:PortfolioService) { }
- 
-
-  ngOnInit(): void {
-    this.datosPortfolio.datosDeExperiencia().subscribe(experiencia =>{
-    this.experienceList=experiencia;     
-    });
-}*/
