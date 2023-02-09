@@ -17,11 +17,11 @@ export class InterceptorService implements HttpInterceptor{
             {
                 req=req.clone({
                     setHeaders:{
-                        Authorization: `Bearer ${currentUser.accesToken}`
+                        Authorization: `Bearer ${currentUser.accessToken}` //Authorization: `Bearer ${currentUser.accesToken}`
                     }
                 })
             }
-            console.log("Interceptor está corriendo" + JSON.stringify)
+            console.log("Interceptor está corriendo" + JSON.stringify(req))//console.log("Interceptor está corriendo" + JSON.stringify)
             return next.handle(req);
         
     }
