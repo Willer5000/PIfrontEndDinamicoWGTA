@@ -45,9 +45,14 @@ export class ExperienciaComponent implements OnInit, OnDestroy {
     this.unsubscribe$.next();
     this.unsubscribe$.complete();
   }
-
+/*
   deleteExperiencia(id: number) {
     this.experienciaService.delete(id).subscribe();
+  }*/
+  deleteExperiencia(id: number): void {
+    this.experienciaService.delete(id).subscribe(() => {
+      this.experiencia = this.experiencia.filter(e => e.id !== id);
+    });
   }
 }
 
