@@ -75,7 +75,8 @@ get UsuarioAutenticado()
 {
   return this.currentUserSubject.value;
 }
-}
+}*/
+//OPCION C
 /*
 @Injectable({
   providedIn: 'root'
