@@ -35,9 +35,18 @@ export class SExperienciaService {
   public update(id: number, experiencia: Experiencia): Observable<any>{
     return this.http.put<any>(this.expURL + `update/${id}`, experiencia);
   }
-  public delete(id: number): Observable<any>{
+ /* public delete(id: number): Observable<any>{
     return this.http.delete<any>(this.expURL + `delete/${id}`)
   }
+}*/
+public delete(id: number): Observable<any>{
+  return this.http.delete<any>(this.expURL + `delete/${id}`).pipe(
+    catchError(error => {
+      console.error(error);
+      return of({});
+    })
+  );
+}
 }
 /*
   constructor(private httpClient: HttpClient) { }
